@@ -4,6 +4,7 @@ const createNumberCells = function () {
     let numberCell = document.createElement("div");
     let h4 = document.createElement("h4");
     numberCell.classList.add("number-cells");
+    numberCell.classList.add(i);
     numbersBox.appendChild(numberCell);
     numberCell.appendChild(h4);
     h4.appendChild(document.createTextNode(i));
@@ -17,10 +18,9 @@ const generateNumber = function () {
   numberOnDisplay.classList.add("number-display");
   display.appendChild(numberOnDisplay);
   numberOnDisplay.appendChild(document.createTextNode(number));
-};
-
-const machNumbers = function () {
-  //
+  let classNumber = document.getElementsByClassName(number);
+  console.log(classNumber);
+  classNumber[0].style.backgroundColor = "lightpink";
 };
 
 window.onload = function () {
