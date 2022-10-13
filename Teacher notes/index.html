@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style.css" />
+    <title>Calendar Project</title>
+  </head>
+
+  <body>
+    <div class="container">
+      <h1>Loading...</h1>
+      <div id="calendar">
+        <!-- DAYS WILL BE GENERATED HERE-->
+        <!-- <div class="day">
+                <h3>1</h3>
+            </div> -->
+      </div>
+      <h2>Add Meeting</h2>
+      <div id="addMeeting">
+        <div>
+          <h4>Meeting Day</h4>
+          <span id="newMeetingDay"><span>Click on a Day</span></span>
+        </div>
+        <div>
+          <h4>Meeting Time</h4>
+          <input id="newMeetingTime" type="time" />
+        </div>
+        <div>
+          <h4>Meeting Name</h4>
+          <input
+            id="newMeetingName"
+            type="text"
+            placeholder="Insert the meeting description"
+          />
+        </div>
+        <div class="last">
+          <h4>Add Meeting</h4>
+          <input
+            id="createMeeting"
+            type="button"
+            value="Save Meeting"
+            onclick="saveMeeting()"
+          />
+        </div>
+      </div>
+      <div id="appointments">
+        <h2>Appointments for the day:</h2>
+        <ul id="appointmentsList">
+          <!-- These are going to be dynamically generated
+                <li>item-1</li>
+                <li>item-2</li>
+                <li>item-3</li>
+                <li>item-4</li>
+                <li>item-5</li> -->
+        </ul>
+      </div>
+    </div>
+
+    <script src="./index.js"></script>
+  </body>
+</html>

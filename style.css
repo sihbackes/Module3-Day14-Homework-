@@ -1,0 +1,61 @@
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@300;700;900&display=swap");
+
+body {
+  margin: 0;
+  font-family: "Outfit", sans-serif;
+  background-color: rgb(255, 253, 254);
+}
+
+.container {
+  max-width: 850px;
+  margin-inline: auto; /* left and right */
+  margin-block: 3rem; /* top and bottom */
+}
+#numbers-box {
+  max-width: 850px;
+  margin-inline: auto; /* left and right */
+  margin-block: 3rem; /* top and bottom */
+}
+.number-cells {
+  width: 70px;
+  height: 70px;
+  border: 2px solid rgb(128, 92, 92);
+  display: inline-block;
+  margin: 1px;
+  border-radius: 1px;
+  align-items: center;
+  justify-content: center;
+}
+
+h4 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0;
+  font-size: 1.5rem;
+  color: rgb(128, 92, 92);
+}
+.results {
+  display: flex;
+  align-items: center;
+}
+.btn {
+  width: 120px;
+  height: 50px;
+  border: none;
+  border-radius: 30px;
+  background-color: rgb(128, 92, 92);
+  color: rgb(255, 253, 254);
+  cursor: pointer;
+  margin-left: 40px;
+  margin-right: 40px;
+}
+
+.number-display {
+  font-size: 1.5rem;
+  margin: 10px;
+}
+
+.selected {
+  background-color: lightpink;
+}

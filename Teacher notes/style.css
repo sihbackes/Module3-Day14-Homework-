@@ -1,0 +1,119 @@
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@300;700;900&display=swap");
+
+body {
+  margin: 0;
+  background-color: #131334;
+  color: #f0e7f2;
+  font-family: "Outfit", sans-serif;
+}
+
+.container {
+  max-width: 768px;
+  margin-inline: auto; /* left and right */
+  margin-block: 3rem; /* top and bottom */
+}
+
+#calendar {
+  background-color: #0c0b1d;
+  border: 6px solid transparent;
+}
+
+h1 {
+  font-size: 64px;
+  margin-block-end: 0;
+  line-height: 0.7;
+}
+
+h2 {
+  margin-top: 3rem;
+  margin-bottom: 0;
+  font-size: 2rem;
+}
+
+.day {
+  display: inline-block;
+  width: 13.8%;
+  aspect-ratio: 1/1;
+  border: 1px solid transparent;
+  border-radius: 6px;
+}
+
+.day:hover {
+  background-color: #15132e;
+  cursor: pointer;
+}
+
+.day h3 {
+  text-align: center;
+  margin: 0;
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 26px;
+  font-weight: 300;
+}
+
+.day.selected {
+  border-color: #7a408a;
+}
+
+/* color: #7a408a; */
+
+.today h3 {
+  color: #ba56d5;
+  font-weight: 900;
+}
+
+#addMeeting div {
+  display: inline-block;
+  vertical-align: bottom;
+  margin-right: 50px;
+}
+
+#addMeeting div.last {
+  margin-right: initial;
+}
+
+input {
+  min-width: 130px;
+  min-height: 36px;
+  background-color: #0c0b1d;
+  color: #f0e7f2;
+  border: initial;
+  padding: 10px;
+  font-weight: 700;
+  border-radius: 3px;
+}
+
+#addMeeting input::placeholder {
+  color: #a69ca9;
+}
+
+#newMeetingName {
+  min-width: 200px;
+}
+
+#newMeetingDay span {
+  display: inline-block;
+  padding-block: 1.1rem;
+}
+
+#newMeetingDay.hasDay {
+  display: inline-block;
+  font-size: 28px;
+  background-color: #0c0b1d;
+  border-radius: 3px;
+  color: #f0e7f2;
+  padding: 0.65rem;
+}
+
+#newMeetingTime::-webkit-calendar-picker-indicator {
+  background-color: #7a408a;
+  border-radius: 50%;
+}
+
+#createMeeting {
+  background-color: #7a408a;
+  padding-block: 1.2rem;
+  cursor: pointer;
+}
